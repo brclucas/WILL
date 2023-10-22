@@ -14,9 +14,14 @@ function pluck(array, propiedad) {
   // Pista: es una buena oportunidad para usar map.
 
   // Tu código acá:
-
+  
+  var resultado = array.map(function (elemento) {
+    return ( elemento[propiedad] );
+  });
+return (resultado)
 }
-
+var productos = [{ name: 'TV LCD', price: 100}, { name: 'Computadora', price: 500 }]
+pluck(productos, 'name');
 // No modifiques nada debajo de esta linea //
 
 module.exports = pluck
